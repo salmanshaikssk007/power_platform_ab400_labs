@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1f7791b3-0a7b-4dde-b9c6-13d565e5b00c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr36f_case1" select="1" icon="1" preview="1">
+        <row name="result" id="cr36f_caseid">
+          <cell name="cr36f_case1" width="300" />
+          <cell name="cr36f_status" width="150" />
+          <cell name="cr36f_priority" width="150" />
+          <cell name="cr36f_opendate" width="150" />
+          <cell name="cr36f_reviewduedate" width="150" />
+          <cell name="cr36f_assignedworker" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr36f_case">
+          <attribute name="cr36f_caseid" />
+          <attribute name="cr36f_case1" />
+          <attribute name="createdon" />
+          <order attribute="cr36f_case1" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr36f_status" />
+          <attribute name="cr36f_priority" />
+          <attribute name="cr36f_opendate" />
+          <attribute name="cr36f_reviewduedate" />
+          <attribute name="cr36f_assignedworker" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Cases" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

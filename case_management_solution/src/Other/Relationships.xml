@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_cr36f_case" />
+  <EntityRelationship Name="business_unit_cr36f_worker" />
+  <EntityRelationship Name="cr36f_case_AssignedWorker_cr36f_worker" />
+  <EntityRelationship Name="lk_cr36f_case_createdby" />
+  <EntityRelationship Name="lk_cr36f_case_modifiedby" />
+  <EntityRelationship Name="lk_cr36f_worker_createdby" />
+  <EntityRelationship Name="lk_cr36f_worker_modifiedby" />
+  <EntityRelationship Name="owner_cr36f_case" />
+  <EntityRelationship Name="owner_cr36f_worker" />
+  <EntityRelationship Name="team_cr36f_case" />
+  <EntityRelationship Name="team_cr36f_worker" />
+  <EntityRelationship Name="user_cr36f_case" />
+  <EntityRelationship Name="user_cr36f_worker" />
+</EntityRelationships>
