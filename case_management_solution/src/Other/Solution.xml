@@ -80,6 +80,7 @@
     <RootComponents>
       <RootComponent type="1" schemaName="cr36f_case" behavior="0" />
       <RootComponent type="1" schemaName="cr36f_worker" behavior="0" />
+      <RootComponent type="91" id="{f1eb8d9b-44c4-f111-aaaf-6045bd0302db}" schemaName="CasePlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4baf118b8b9450ff" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
