@@ -57,13 +57,13 @@ namespace CasePlugins
             }
 
             var open = target.GetAttributeValue<DateTime?>("cr36f_opendate");
-            var due = target.GetAttributeValue<DateTime?>("cr36f_ReviewDueDate");
+            var due = target.GetAttributeValue<DateTime?>("cr36f_reviewduedate");
 
             // Bussiness Logic
             if (open.HasValue && !due.HasValue)
             {
-                target["cr36f_ReviewDueDate"] = open.Value.AddDays(30);
-                localPluginContext.Trace($"Setting Review Due Date to {target["cr36f_ReviewDueDate"]}");
+                target["cr36f_reviewduedate"] = open.Value.AddDays(30);
+                localPluginContext.Trace($"Setting Review Due Date to {target["cr36f_reviewduedate"]}");
             }else if(open.HasValue && due.HasValue && due.Value < open.Value)
             {
                 throw new InvalidPluginExecutionException("Review Due Date cannot be earlier than Open Date");
